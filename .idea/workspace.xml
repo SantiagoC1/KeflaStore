@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0abe169f-6e07-46ea-88e1-da6cfad711a5" name="Changes" comment="ConfigHibernateYjakarta">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Carrito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Comprobante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/DetalleComprobante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorComprobante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorDetalleComprobante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorGenerico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0abe169f-6e07-46ea-88e1-da6cfad711a5" name="Changes" comment="Creacion de entidades" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +77,7 @@
       <workItem from="1718338051513" duration="374000" />
       <workItem from="1718374209727" duration="6083000" />
       <workItem from="1718656654180" duration="6671000" />
-      <workItem from="1718674361376" duration="1631000" />
+      <workItem from="1718674361376" duration="1851000" />
     </task>
     <task id="LOCAL-00001" summary="ConfigHibernateYjakarta">
       <option name="closed" value="true" />
@@ -117,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718324096322</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creacion de entidades">
+      <option name="closed" value="true" />
+      <created>1718678500958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718678500958</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ConfigHibernateYjakarta" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConfigHibernateYjakarta" />
+    <MESSAGE value="Creacion de entidades" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de entidades" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
