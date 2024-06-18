@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0abe169f-6e07-46ea-88e1-da6cfad711a5" name="Changes" comment="ConfigHibernateYjakarta">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Carrito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Comprobante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/DetalleComprobante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorComprobante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorDetalleComprobante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorGenerico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pruebas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,35 +34,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SantiagoC1/KeflaStore.git",
-    "accountId": "210ff20a-ed44-43ea-9fc5-c2d2de6cc665"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SantiagoC1&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SantiagoC1/KeflaStore.git&quot;,
+    &quot;accountId&quot;: &quot;210ff20a-ed44-43ea-9fc5-c2d2de6cc665&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2hqSas0O3sBVnBOpDhumhv5N2wa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Santi/IdeaProjects/KeflaStore/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pruebas.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Santi/IdeaProjects/KeflaStore/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +87,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718320183648</updated>
-      <workItem from="1718320184812" duration="3043000" />
+      <workItem from="1718320184812" duration="9979000" />
+      <workItem from="1718338051513" duration="374000" />
+      <workItem from="1718374209727" duration="6083000" />
+      <workItem from="1718656654180" duration="6671000" />
+      <workItem from="1718674361376" duration="1631000" />
     </task>
     <task id="LOCAL-00001" summary="ConfigHibernateYjakarta">
       <option name="closed" value="true" />
@@ -85,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718323721314</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ConfigHibernateYjakarta">
+      <option name="closed" value="true" />
+      <created>1718324096322</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718324096322</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +158,10 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="jakarta.persistence.RollbackException" package="jakarta.persistence" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
