@@ -24,7 +24,7 @@ public class Comprobante {
     @JoinColumn(name = "client_id")
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "comprobante", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "comprobante",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<DetalleComprobante> detalles = new ArrayList<>();
 
     public Comprobante() {}

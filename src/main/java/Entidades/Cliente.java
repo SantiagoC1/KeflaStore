@@ -20,10 +20,10 @@ public class Cliente {
     @Column
     private Integer edad;
 
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Carrito> carts = new ArrayList<>();
 
-    @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL,orphanRemoval = true)
+    @OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<Comprobante> comprobantes= new ArrayList<>();
 
 

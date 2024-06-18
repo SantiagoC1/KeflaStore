@@ -8,10 +8,10 @@ import jakarta.persistence.EntityManager;
 import java.util.List;
 
 public class GestorDetalleComprobante {
-    public void create (Integer cantidad, Double precioU, Comprobante comprobante, Producto producto){
+    public void create (DetalleComprobante detalleComprobante){
         EntityManager manager =  GestorGenerico.getEntityManager();
         manager.getTransaction().begin();
-        DetalleComprobante detalleComprobante=new DetalleComprobante(cantidad,precioU,comprobante,producto);
+        //DetalleComprobante detalleComprobante=new DetalleComprobante(cantidad,precioU,comprobante,producto);
         manager.persist(detalleComprobante);
         manager.getTransaction().commit();
         manager.close();

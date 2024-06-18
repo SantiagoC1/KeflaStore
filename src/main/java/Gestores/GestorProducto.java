@@ -8,11 +8,11 @@ import java.util.List;
 
 public class GestorProducto {
     //Metodo para CREAR
-    public void create(String nombre, Integer precio, Integer stock){
+    public void create(Producto producto){
         EntityManager manager =  GestorGenerico.getEntityManager();
         //inicialiazar operaciones de Crear actualizar eliminar
         manager.getTransaction().begin();
-        Producto producto = new Producto(nombre, precio, stock);
+        //Producto producto = new Producto(nombre, precio, stock);
         //convertir objeto en fila
         manager.persist(producto);
         //Enviar los datos

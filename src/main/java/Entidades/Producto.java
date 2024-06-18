@@ -18,10 +18,10 @@ public class Producto {
     @Column
     private Integer stock;
 
-    @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "producto",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Carrito> carts = new ArrayList<>();
 
-    @OneToMany(mappedBy = "producto",cascade = CascadeType.ALL,orphanRemoval = true)
+    @OneToMany(mappedBy = "producto",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<DetalleComprobante> detalleComprobante= new ArrayList<>();
 
     public Producto() {}

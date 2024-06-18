@@ -7,11 +7,11 @@ import java.util.List;
 
 public class GestorCliente {
     //Metodo para CREAR
-    public void create(String nombre, String apellido, Integer dni, Integer edad){
+    public void create(Cliente cliente){
         EntityManager manager =  GestorGenerico.getEntityManager();
         //inicialiazar operaciones de Crear actualizar eliminar
         manager.getTransaction().begin();
-        Cliente cliente = new Cliente(nombre, apellido, dni, edad);
+        //Cliente cliente = new Cliente(nombre, apellido, dni, edad);
         //convertir objeto en fila
         manager.persist(cliente);
         //Enviar los datos

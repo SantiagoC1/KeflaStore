@@ -9,11 +9,11 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class GestorComprobante {
-    public void create (LocalDate fecha, String estado, Cliente cliente){
+    public void create (Comprobante comprobante){
         EntityManager manager =  GestorGenerico.getEntityManager();
         //inicialiazar operaciones de Crear actualizar eliminar
         manager.getTransaction().begin();
-        Comprobante comprobante = new Comprobante(fecha,estado,cliente);
+        //Comprobante comprobante = new Comprobante(fecha,estado,cliente);
         manager.persist(comprobante);
         manager.getTransaction().commit();
         manager.close();
