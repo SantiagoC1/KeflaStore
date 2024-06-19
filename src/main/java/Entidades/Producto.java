@@ -5,33 +5,35 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Entity
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column
+
+
     private String nombre;
-    @Column
-    private Integer precio;
-    @Column
+    private double precio;
     private Integer stock;
 
-    @OneToMany(mappedBy = "producto",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    //se declaran las relaciones entre tablas
+    @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Carrito> carts = new ArrayList<>();
 
-    @OneToMany(mappedBy = "producto",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "producto",cascade = CascadeType.ALL,orphanRemoval = true)
     private List<DetalleComprobante> detalleComprobante= new ArrayList<>();
 
+    //Declaracion de constructores
     public Producto() {}
 
-    public Producto(String nombre, Integer precio, Integer stock) {
+    public Producto(String nombre, double precio, Integer stock) {
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
     }
-
+    //declaracion getters y setters
     public String getNombre() {
         return nombre;
     }
@@ -40,7 +42,7 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public Integer getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
@@ -68,6 +70,8 @@ public class Producto {
         this.carts = carts;
     }
 
+    //declaracion metodos equals hashcode y toString
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -89,7 +93,8 @@ public class Producto {
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
                 ", stock=" + stock +
-                ", carts=" + carts +
+                ", carts=" + carts.stream().map(Carrito::getId).collect(Collectors.toList()) +
+                ", detalleComprobante=" + detalleComprobante.stream().map(DetalleComprobante::getId).collect(Collectors.toList()) +
                 '}';
     }
 }

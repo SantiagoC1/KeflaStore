@@ -10,7 +10,7 @@ public class Carrito {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Integer precio;
+    private double precio;
     private Integer cantidad;
 
     @ManyToOne
@@ -21,16 +21,19 @@ public class Carrito {
     @JoinColumn(name = "producto_id",nullable = false)
     private Producto producto;
 
+
+    //Declaracion de constructores
     public Carrito() {}
 
-    public Carrito(Integer precio, Integer cantidad, Cliente cliente, Producto producto) {
+    public Carrito(double precio, Integer cantidad, Cliente cliente, Producto producto) {
         this.precio = precio;
         this.cantidad = cantidad;
         this.cliente = cliente;
         this.producto = producto;
     }
 
-    public Integer getPrecio() {
+    //declaracion getters y setters
+    public double getPrecio() {
         return precio;
     }
 
@@ -66,6 +69,7 @@ public class Carrito {
         return id;
     }
 
+    //declaracion metodos equals hashcode y toString
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

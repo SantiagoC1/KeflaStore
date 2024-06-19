@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0abe169f-6e07-46ea-88e1-da6cfad711a5" name="Changes" comment="Creacion de entidades">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorCarrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entidades/Carrito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entidades/Carrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entidades/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Entidades/Comprobante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entidades/Comprobante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entidades/DetalleComprobante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entidades/DetalleComprobante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entidades/Producto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gestores/GestorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gestores/GestorComprobante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorComprobante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gestores/GestorDetalleComprobante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorDetalleComprobante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gestores/GestorProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gestores/GestorProducto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pruebas.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,8 @@
       <workItem from="1718338051513" duration="374000" />
       <workItem from="1718374209727" duration="6083000" />
       <workItem from="1718656654180" duration="6671000" />
-      <workItem from="1718674361376" duration="4381000" />
+      <workItem from="1718674361376" duration="4503000" />
+      <workItem from="1718747435941" duration="7936000" />
     </task>
     <task id="LOCAL-00001" summary="ConfigHibernateYjakarta">
       <option name="closed" value="true" />
@@ -152,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718678572273</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Creacion de entidades">
+      <option name="closed" value="true" />
+      <created>1718681094093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718681094093</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

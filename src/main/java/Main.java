@@ -6,6 +6,7 @@ import Gestores.GestorProducto;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 public class Main {
@@ -40,7 +41,8 @@ public class Main {
 
 
 
-            Comprobante comprobante=new Comprobante(LocalDate.now(),"En camino",cliente);
+            Comprobante comprobante=new Comprobante(LocalDateTime.now(),"En camino",cliente);
+            System.out.println(comprobante.getFecha());
             gestorComprobante.create(comprobante);
 
             DetalleComprobante detalleComprobante=new DetalleComprobante(2,200.0,comprobante,producto);

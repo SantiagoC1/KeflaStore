@@ -2,10 +2,11 @@ package Entidades;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Entity
 public class Comprobante {
@@ -15,11 +16,12 @@ public class Comprobante {
     private Integer id;
 
     @Column
-    private LocalDate fecha;
+    private LocalDateTime fecha;
 
     @Column
     private String estado;
 
+    //se declaran las relaciones entre tablas
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "client_id")
     private Cliente cliente;
@@ -27,19 +29,20 @@ public class Comprobante {
     @OneToMany(mappedBy = "comprobante",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<DetalleComprobante> detalles = new ArrayList<>();
 
+    //Declaracion de constructores
     public Comprobante() {}
 
-    public Comprobante(LocalDate fecha, String estado, Cliente cliente) {
+    public Comprobante(LocalDateTime fecha, String estado, Cliente cliente) {
         this.fecha = fecha;
         this.estado = estado;
         this.cliente = cliente;
     }
-
-    public LocalDate getFecha() {
+    //declaracion getters y setters
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
@@ -71,6 +74,8 @@ public class Comprobante {
         return id;
     }
 
+
+    //declaracion metodos equals hashcode y toString
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -90,8 +95,8 @@ public class Comprobante {
                 "id=" + id +
                 ", fecha=" + fecha +
                 ", estado='" + estado + '\'' +
-                ", cliente=" + cliente +
-                ", detalles=" + detalles +
+                ", clienteId=" + (cliente != null ? cliente.getId() : null) +
+                ", detalles=" + detalles.stream().map(DetalleComprobante::getId).collect(Collectors.toList()) +
                 '}';
     }
 }

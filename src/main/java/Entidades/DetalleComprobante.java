@@ -20,6 +20,7 @@ public class DetalleComprobante {
     @Column
     private Double subTotal;
 
+    //se declaran las relaciones entre tablas
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "comprobante_id")
     private Comprobante comprobante;
@@ -28,6 +29,7 @@ public class DetalleComprobante {
     @JoinColumn(name = "product_id")
     private Producto producto;
 
+    //Declaracion de constructores
     public DetalleComprobante() {}
 
     public DetalleComprobante(Integer cantidad, Double precioU, Comprobante comprobante, Producto producto) {
@@ -37,6 +39,8 @@ public class DetalleComprobante {
         this.comprobante = comprobante;
         this.producto = producto;
     }
+
+    //declaracion getters y setters
 
     public Integer getCantidad() {
         return cantidad;
@@ -81,6 +85,8 @@ public class DetalleComprobante {
     public Integer getId() {
         return id;
     }
+
+    //declaracion metodos equals hashcode y toString
 
     @Override
     public boolean equals(Object o) {

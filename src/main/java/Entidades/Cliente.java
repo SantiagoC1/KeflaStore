@@ -5,30 +5,29 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Entity
 public class Cliente {
     @Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column
+
     private String nombre;
-    @Column
     private String apellido;
-    @Column
     private Integer dni;
-    @Column
     private Integer edad;
 
-    @OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private List<Carrito> carts = new ArrayList<>();
 
-    @OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    //se declaran las relaciones entre tablas
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<Carrito> carritos = new ArrayList<>();
+
+    @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Comprobante> comprobantes= new ArrayList<>();
 
 
-
-
+    //Declaracion de constructores
     public Cliente() {}
 
     public Cliente(String nombre, String apellido, Integer dni, Integer edad) {
@@ -37,7 +36,7 @@ public class Cliente {
         this.dni = dni;
         this.edad = edad;
     }
-
+    //declaracion getters y setters
     public String getNombre() {
         return nombre;
     }
@@ -75,12 +74,14 @@ public class Cliente {
     }
 
     public List<Carrito> getCarts() {
-        return carts;
+        return carritos;
     }
 
     public void setCarts(List<Carrito> carts) {
-        this.carts = carts;
+        this.carritos = carts;
     }
+
+    //declaracion metodos equals hashcode y toString
 
     @Override
     public boolean equals(Object o) {
@@ -103,7 +104,8 @@ public class Cliente {
                 ", apellido='" + apellido + '\'' +
                 ", dni=" + dni +
                 ", edad=" + edad +
-                ", carrito=" + carts +
+                ", carritos=" + carritos.stream().map(Carrito::getId).collect(Collectors.toList()) +
+                ", comprobantes=" + comprobantes.stream().map(Comprobante::getId).collect(Collectors.toList()) +
                 '}';
     }
 }
